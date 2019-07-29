@@ -1,0 +1,8 @@
+>>> from A1 import vocal_count
+>>> from A1 import vocal_replace
+>>> vocal_count("Hóla mundon")
+4
+>>> vocal_count("Hóla mundon\\n Hóla mundon\\n Hóla mundon\\n Hóla mundon\\n Hóla mundên\\n")
+20
+>>> vocal_replace("Hóla mUndon")
+'Húle mAndun'
