@@ -1,0 +1,52 @@
+HU :
+Como Cliente, quiero suscribirme a un canal Premium por períodos flexibles de
+tiempo por medio del sitio web.
+
+PA1:
+Dado un usuario que aún no se ha identificado en el sistema
+
+Cuando intenta suscribirse a algún canal Premium
+
+Entonces se le redirige automáticamente a la página de login para que pueda identificarse
+
+PA2:
+Dado un usuario se ha logueado al sistema
+
+Cuando intenta suscribirse a algún canal
+
+Entonces revisa las subscripcion vigentes del usuario
+
+PA3:
+Dado un usuario se ha logueado al sistema y intenta suscribirse a un canal
+
+Cuando se ha revisado las suscripciones vigentes y existe una subscripción al canal y está es vigente
+
+Entonces informa al usuario que su subscripción es vigente y le muestra el periodo de la vigencia
+
+PA4:
+Dado un usuario se ha logueado al sistema y intenta suscribirse a un canal
+
+Cuando se ha revisado las subscripciones vigentes y no existe una subscripción al canal vigente
+
+Entonces muestra la pagina de subscripción al canal
+
+PA5:
+Dado un usuario se ha logueado al sistema y se encuentra en la pagina de subscripcion a un canal
+
+Cuando el usuario a seleccionado el periodo de la vigencia de la subscripción y ha escogido su método de pago
+
+Entonces se hace el proceso de subscripción al canal para el usuario en la vigencia señalada
+
+PA6:
+Dado un usuario se ha logueado al sistema y se encuentra en el proceso de la subscripción al canal
+
+Cuando el proceso de pago no fue exitoso
+
+Entonces muestra al usuario que hubo un problema con su forma de pago
+
+PA7:
+Dado un usuario se ha logueado al sistema y se encuentra en el proceso de la subscripción al canal
+
+Cuando el proceso de pago fue exitoso
+
+Entonces susbribe al usuario al canal en el tiempo especificado y se guarda en el sistema
